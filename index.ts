@@ -1,3 +1,5 @@
+import './style.css';
+
 const container: HTMLElement | any = document.getElementById('app');
 const pokemons: number = 100;
 
