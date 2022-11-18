@@ -22,10 +22,11 @@ const getPokemon = async (id) => {
 };
 const showPokemon = (pokemon) => {
     let output = `<div class="card">
-  <span class = "card--id">#${pokemon.id}</span>
+  <span class ="card--id">#${pokemon.id}</span>
   <img class="card--image" src=${pokemon.image} alt=${pokemon.name}/>
   <h1 class="card--name">${pokemon.name}</h1>
   <span class="card--details">${pokemon.type}</span>
   </div>`;
+    container.innerHTML += output;
 };
 fetchData();
